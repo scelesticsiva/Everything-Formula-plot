@@ -3,6 +3,13 @@ I recently came across this amazing formula called "Tupper's self-referential fo
 
 I wanted to create a python program which can create the k-value(that they talk about in the video) for any sequence of letters. This repository is a result of that.
 
+## Dependencies
+To install all dependencies, run the following command
+```bash
+pip3 install -r requirements.txt
+```
+
+## Creating k-value
 To create k-value for your string, run the following code,
 ```
 python3 src/main.py --string <string for which you want the k value> --save T
