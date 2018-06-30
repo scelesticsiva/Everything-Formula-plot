@@ -2,7 +2,7 @@
 @author - Sivaramakrishnan
 """
 import numpy as np
-from src import utils
+import utils
 import argparse
 
 def save_graph_and_k(inp_string,save_fig = False):

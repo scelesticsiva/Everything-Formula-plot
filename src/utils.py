@@ -26,8 +26,7 @@ def break_string_of_k(k,break_point = 80):
     string_k = str(k)
     return_string = ""
     len_string,i = len(string_k),0
-    print("len:",len_string)
-    print(string_k)
+    print("k:",string_k)
     while(i < len_string//break_point):
         return_string += string_k[i*break_point:(i+1)*break_point]+"\n"
         i += 1
@@ -52,6 +51,6 @@ def char_to_bitmap(inp_string,JSON_FILE = "char_bitmap_5x5.json"):
 def plot_grid(result_grid,k,save = False):
     plt.imshow(result_grid,cmap="binary")
     plt.xlabel("k = "+break_string_of_k(k),fontsize = 8)
+    plt.yticks([])
     if save:
-        plt.imsave("grid.png")
-    plt.show()
+        plt.savefig("grid.png",bbox_inches = "tight",dpi = 300)
